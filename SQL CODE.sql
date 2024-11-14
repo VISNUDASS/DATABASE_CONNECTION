@@ -1,0 +1,12 @@
+CREATE DATABASE VISNUDASS;
+USE VISNUDASS;
+CREATE TABLE STUDENT(
+    id INT PRIMARY KEY,
+    name VARCHAR(20),
+    cgpa DECIMAL(3,2)
+);
+INSERT INTO STUDENT (id, name, cgpa) 
+VALUES (1, 'Alice', 3.75),
+       (2, 'Bob', 3.60),
+       (3, 'Charlie', 3.90);
+SELECT * FROM STUDENT
